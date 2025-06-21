@@ -30,6 +30,7 @@ function App() {
       <Route path="/reset-password/:token" element={<ResetPassword />} />
       <Route path="/order-success" element={<OrderSuccessPage />} />
       <Route path="/delete-account" element={<DeleteAccountPage />} />
+      <Route path="/privacy-policy" element={<DeleteAccountPage />} />
       <Route path="/cart" element={<CartPage />} />
     </Routes>
   );
