@@ -3,7 +3,7 @@ import HomePage from "./pages/HomePage";
 import ShopPage from "./pages/ShopPage";
 import StoreDetails from "./pages/StoreDetails";
 import CartPage from "./pages/CartPage";
-import { Login } from './pages/Login';
+import { Login } from "./pages/Login";
 import { Signup } from "./pages/Signup";
 import ForgotPassword from "./pages/ForgotPassword";
 import ResetPassword from "./pages/ResetPassword";
@@ -12,7 +12,7 @@ import AboutUsPage from "./pages/AboutUsPage";
 import ContactUsPage from "./pages/ContactUsPage";
 import StoresPage from "./pages/StoresPage";
 import OrderSuccessPage from "./pages/OrderSuccessPage";
-
+import DeleteAccountPage from "./pages/DeletePage";
 
 function App() {
   return (
@@ -29,14 +29,8 @@ function App() {
       <Route path="/forgot-password" element={<ForgotPassword />} />
       <Route path="/reset-password/:token" element={<ResetPassword />} />
       <Route path="/order-success" element={<OrderSuccessPage />} />
-      <Route 
-          path="/cart" 
-          element={
-            <CartPage 
-              
-            />
-          } 
-        />
+      <Route path="/delete-account" element={<DeleteAccountPage />} />
+      <Route path="/cart" element={<CartPage />} />
     </Routes>
   );
 }
